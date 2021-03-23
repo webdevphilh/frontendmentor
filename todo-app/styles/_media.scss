@@ -1,0 +1,20 @@
+
+
+@media screen and (min-width:"376px"){
+    body{
+        //background-size: contain;
+    }
+
+    section{
+        max-width: 30em;
+    }
+}
+
+@media screen and (min-width:"600px"){
+    body{
+        background-image: url("../images/bg-desktop-light.jpg");
+    }
+    section{
+        margin: auto;
+    }
+}

@@ -1,6 +1,43 @@
 
+html{
+    > * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
 
 body{
     font-family: 'Josefin Sans', sans-serif;    // 400 700
     font-size: 18px;
+    font-weight: 700;
+    background-color: var(--bg-body);
+    background-image: url("../images/bg-mobile-light.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+button, p, span, label, input, h1{
+    font-family: 'Josefin Sans', sans-serif;    // 400 700
+}
+
+button, input[type="checkbox"]{
+    cursor: pointer;
+}
+
+section{
+    margin: 1.3333em;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+    font-size: .7em;
+    color: var(--text-color-passive);
 }

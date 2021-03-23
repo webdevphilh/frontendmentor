@@ -1,0 +1,21 @@
+
+.selector{
+    //outline: 1px solid greenyellow;
+    //*{outline: 1px solid greenyellow;}
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-container);
+    margin-top: .8em;
+    border-radius: .2em;
+
+    button{
+        margin: 1em 0;
+        border: none;
+        background-color: var(--bg-container);
+        font-weight: 700;
+        font-size: .7em;
+        color: var(--text-color-passive);
+    }
+}

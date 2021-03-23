@@ -1,0 +1,16 @@
+
+.statistics{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.4em;
+    border-bottom-right-radius: .2em;
+    border-bottom-left-radius: .2em;
+    background-color: var(--bg-container);
+    color: var(--text-color-passive);
+
+    span{
+        font-size: .6em;
+    }
+}

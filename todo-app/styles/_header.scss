@@ -1,0 +1,10 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        letter-spacing: .36111em;
+        color: var(--text-color-header);
+    }
+}

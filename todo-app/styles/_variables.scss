@@ -1,21 +1,52 @@
 
 
+:root[data-theme="theme-light"]{
+    --text-color-header: hsl(0, 0%, 98%);
+    --text-color: hsl(235, 19%, 35%);
+    --seperator-color: hsl(236, 33%, 92%);
+    --text-color-passive: hsl(236, 9%, 61%);
+    --bg-body: #F2F1F6;
+    //--bg-body: hsl(236, 33%, 92%);
+    --bg-container : white;
+    --text-color-highlighted: hsl(220, 98%, 61%);
+    --circle-color: hsl(233, 11%, 84%);
+}
+
+:root[data-theme="theme-dark"]{
+    --text-color-header: hsl(0, 0%, 98%);
+    --text-color: hsl(234, 39%, 85%);
+    --seperator-color: hsl(234, 11%, 52%);
+    --text-color-passive: hsl(236, 9%, 61%);
+    --bg-body: hsl(235, 21%, 11%);
+    --bg-container : hsl(235, 24%, 19%);
+    --text-color-highlighted:hsl(220, 98%, 61%);
+    --circle-color: hsl(234, 11%, 52%);
+}
+
+$checked-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+
+
+
+
+
+// dark theme 
+//$veryDarkBlue: hsl(235, 21%, 11%);
+//$veryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+//$lightGrayishBlue: hsl(234, 39%, 85%);
+$lightGrayishBlue-hover: hsl(236, 33%, 92%);
+//$darkGrayishBlue: hsl(234, 11%, 52%);
+$veryDarkGrayishBlue: hsl(233, 14%, 35%);
+$veryDarkGrayishBlue: hsl(237, 14%, 26%);
+
+
 // Primary
-$brightBlue: hsl(220, 98%, 61%);
+//$brightBlue: hsl(220, 98%, 61%);
 //check Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
 
 // light theme 
-$veryLightGray: hsl(0, 0%, 98%);
-$veryLightGrayishBlue: hsl(236, 33%, 92%);
-$lightGrayishBlue: hsl(233, 11%, 84%);
-$darkGrayishBlue: hsl(236, 9%, 61%);
-$veryDarkGrayishBlue: hsl(235, 19%, 35%);
-
-// dark theme 
-$veryDarkBlue: hsl(235, 21%, 11%);
-$veryDarkDesaturatedBlue: hsl(235, 24%, 19%);
-$lightGrayishBlue: hsl(234, 39%, 85%);
-$lightGrayishBlue-hover: hsl(236, 33%, 92%);
-$darkGrayishBlue: hsl(234, 11%, 52%);
-$veryDarkGrayishBlue: hsl(233, 14%, 35%);
-$veryDarkGrayishBlue: hsl(237, 14%, 26%);
+//$veryLightGray: hsl(0, 0%, 98%);
+//$veryLightGrayishBlue: hsl(236, 33%, 92%);
+//$lightGrayishBlue: hsl(233, 11%, 84%);
+//$darkGrayishBlue: hsl(236, 9%, 61%);
+//$veryDarkGrayishBlue: hsl(235, 19%, 35%);

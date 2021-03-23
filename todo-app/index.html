@@ -6,24 +6,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>Frontend Mentor | Todo app</title>
-
-
 </head>
+
 <body>
 
-  Todo
+  <section>
+    <header>
+      <h1>TODO</h1>
+      <input id="theme-switch" type="image" onclick="switchTheme()" src="./images/icon-moon.svg" value="set-to-darkmode">
+    </header>
 
-  <!-- Add dynamic number --> items left
+    <div class="create-container">
+      <form action="create" id="create-new">
+        <button type="submit"></button>
+        <input required type="text" name="create" id="task" placeholder="Create a new todo...">
+      </form>
+    </div>
 
-  All
-  Active 
-  Completed
+    <div class="container">
+      <div class="item">
+        <input type="checkbox" name="Jog around the park 3x" id="">
+        <label for="Jog around the park 3x">Jog around the park 3x</label>
+        <button><img src="./images/icon-cross.svg" alt="X"></button>
+      </div>
 
-  Clear Completed
+      <div class="item">
+        <input type="checkbox" name="Jog around the park 3x" id="">
+        <label for="Jog around the park 3x">Jog around the park 3x</label>
+        <button><img src="./images/icon-cross.svg" alt="X"></button>
+      </div>
 
-  Drag and drop to reorder list
+      <div class="item">
+        <input type="checkbox" name="Jog around the park 3x" id="">
+        <label for="">Complete Todo App on Frontend Mentor</label>
+        <button><img src="./images/icon-cross.svg" alt="X"></button>
+      </div>
+    </div>
+    
+    <div class="statistics">
+      <span id="left-count">5 items left</span>
+      <span>Clear Completed</span>
+    </div>
+
+    <div class="selector">
+      <button>All</button>
+      <button>Active</button>
+      <button>Completed</button>
+    </div>
+
+    <p class="footer">Drag and drop to reorder list</p>
+
+  </section>
+  
+
+  <script src="./app/Theme.js"></script>
+  <script src="./app/main.js"></script>
 
 </body>
 </html>
