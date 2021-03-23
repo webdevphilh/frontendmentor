@@ -4,7 +4,6 @@
     body{
         //background-size: contain;
     }
-
     section{
         max-width: 30em;
     }
@@ -16,5 +15,34 @@
     }
     section{
         margin: auto;
+        margin-top: 2.9%;
+        h1{
+            font-size: 2.2em;
+        }
+    }
+    .container{
+        .item{
+            label:hover{
+                cursor: pointer;
+            }
+            &:hover button{
+                opacity: 1;
+            }
+            button{
+                opacity: 0;
+            }
+        }
+    }
+    .create-container{
+        padding: 1em;
+        margin-top: .5em;
+        margin-bottom: 1.2em;
+    }
+    .selector button:hover{
+        color: var(--text-color);
+    }
+    button, p, span, label, input{
+        font-size: 1em;
+        font-weight: 300;
     }
 }

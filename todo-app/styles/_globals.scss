@@ -25,6 +25,10 @@ button, p, span, label, input, h1{
     font-family: 'Josefin Sans', sans-serif;    // 400 700
 }
 
+button, p, span, label, input{
+    font-size: .6em;
+}
+
 button, input[type="checkbox"]{
     cursor: pointer;
 }

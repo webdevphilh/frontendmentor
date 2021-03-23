@@ -46,6 +46,10 @@ button, p, span, label, input, h1 {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+button, p, span, label, input {
+  font-size: .6em;
+}
+
 button, input[type="checkbox"] {
   cursor: pointer;
 }
@@ -109,7 +113,6 @@ header h1 {
 }
 
 .create-container #create-new #task {
-  font-size: .6em;
   border: none;
   width: 100%;
   color: var(--text-color);
@@ -156,10 +159,9 @@ header h1 {
 }
 
 .container .item label {
-  width: 75%;
+  width: 100%;
   padding-left: .75em;
   color: var(--text-color);
-  font-size: .6em;
 }
 
 .container .item button {
@@ -184,10 +186,6 @@ header h1 {
   color: var(--text-color-passive);
 }
 
-.statistics span {
-  font-size: .6em;
-}
-
 .selector {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,7 +206,6 @@ header h1 {
   border: none;
   background-color: var(--bg-container);
   font-weight: 700;
-  font-size: .7em;
   color: var(--text-color-passive);
 }
 
@@ -224,6 +221,31 @@ header h1 {
   }
   section {
     margin: auto;
+    margin-top: 2.9%;
+  }
+  section h1 {
+    font-size: 2.2em;
+  }
+  .container .item label:hover {
+    cursor: pointer;
+  }
+  .container .item:hover button {
+    opacity: 1;
+  }
+  .container .item button {
+    opacity: 0;
+  }
+  .create-container {
+    padding: 1em;
+    margin-top: .5em;
+    margin-bottom: 1.2em;
+  }
+  .selector button:hover {
+    color: var(--text-color);
+  }
+  button, p, span, label, input {
+    font-size: 1em;
+    font-weight: 300;
   }
 }
 /*# sourceMappingURL=styles.css.map */
