@@ -10,6 +10,7 @@
     --bg-container : white;
     --text-color-highlighted: hsl(220, 98%, 61%);
     --circle-color: hsl(233, 11%, 84%);
+    --bg-img: url("../images/bg-mobile-light.jpg");
 }
 
 :root[data-theme="theme-dark"]{
@@ -21,6 +22,7 @@
     --bg-container : hsl(235, 24%, 19%);
     --text-color-highlighted:hsl(220, 98%, 61%);
     --circle-color: hsl(234, 11%, 52%);
+    --bg-img: url("../images/bg-mobile-dark.jpg");
 }
 
 $checked-background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
@@ -38,7 +40,6 @@ $lightGrayishBlue-hover: hsl(236, 33%, 92%);
 //$darkGrayishBlue: hsl(234, 11%, 52%);
 $veryDarkGrayishBlue: hsl(233, 14%, 35%);
 $veryDarkGrayishBlue: hsl(237, 14%, 26%);
-
 
 // Primary
 //$brightBlue: hsl(220, 98%, 61%);

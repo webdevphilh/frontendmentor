@@ -16,7 +16,7 @@ body{
     font-size: 18px;
     font-weight: 700;
     background-color: var(--bg-body);
-    background-image: url("../images/bg-mobile-light.jpg");
+    background-image: var(--bg-img);
     background-repeat: no-repeat;
     background-size: contain;
 }

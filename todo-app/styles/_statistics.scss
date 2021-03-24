@@ -13,4 +13,17 @@
     span{
         //font-size: .6em;
     }
+
+    .clear-button{
+        //margin: 1em 0;
+        //font-size: .85em;
+        border: none;
+        background-color: var(--bg-container);
+        color: var(--text-color-passive);
+        font-weight: 700;
+        //font-size: .7em;
+    }
+
+    > .selector .hide-mobile{
+    }
 }
