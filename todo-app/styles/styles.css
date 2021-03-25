@@ -121,13 +121,13 @@ header h1 {
   background: var(--bg-container);
 }
 
-.container {
+#container {
   background-color: var(--bg-container);
   border-top-right-radius: .2em;
   border-top-left-radius: .2em;
 }
 
-.container .item {
+#container .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +142,7 @@ header h1 {
   padding: .68em .8888em;
 }
 
-.container .item input[type="checkbox"] {
+#container .item input[type="checkbox"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -154,19 +154,19 @@ header h1 {
   padding: .35em;
 }
 
-.container .item input[type="checkbox"]:checked {
+#container .item input[type="checkbox"]:checked {
   content: url("../images/icon-check.svg");
   background: -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
   background: linear-gradient(#57ddff, #c058f3);
 }
 
-.container .item label {
+#container .item label {
   width: 100%;
   padding-left: .75em;
   color: var(--text-color);
 }
 
-.container .item button {
+#container .item button {
   background: var(--bg-container);
   border: none;
 }
@@ -242,16 +242,16 @@ header h1 {
   section h1 {
     font-size: 2.2em;
   }
-  .container .item {
+  #container .item {
     padding: .8em .8888em;
   }
-  .container .item label:hover {
+  #container .item label:hover {
     cursor: pointer;
   }
-  .container .item:hover button {
+  #container .item:hover button {
     opacity: 1;
   }
-  .container .item button {
+  #container .item button {
     opacity: 0;
   }
   .create-container {

@@ -1,5 +1,4 @@
 
-
 @media screen and (min-width:"376px"){
     section{
         max-width: 30em;
@@ -20,7 +19,7 @@
             font-size: 2.2em;
         }
     }
-    .container{
+    #container{
         .item{
             padding: .8em .8888em;
             label:hover{
@@ -57,7 +56,6 @@
     }
     .selector{
         button:hover{
-        //color: var(--text-color);
         color: var(--text-color-highlighted);
         }
         &.hide-desktop{
@@ -65,7 +63,6 @@
         }
         &.hide-mobile{
             display: flex;
-            //outline: 1px solid greenyellow;
             margin: 0;
             padding: 0;
             button{

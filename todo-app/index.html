@@ -19,47 +19,21 @@
     </header>
 
     <div class="create-container">
-      <form action="create" id="create-new">
+      <form action="JavaScript:genTask()" id="create-new">
         <button aria-label="create task" type="submit"></button>
         <input required type="text" name="create" id="task" placeholder="Create a new todo...">
       </form>
     </div>
 
-    <div class="container">
-      <div class="item">
-        <input type="checkbox" name="Jog around the park 3x" id="Jog around the park 3x">
+    <div id="container">
+      <div class="item" id="Jog around the park 3x">
+        <input onclick="checkedTask(`Jog around the park 3x`)" type="checkbox" name="Jog around the park 3x">
         <label for="Jog around the park 3x">Jog around the park 3x</label>
-        <button aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
+        <button onclick="deleteTask(`Jog around the park 3x`)" aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
       </div>
 
-      <div class="item">
-        <input type="checkbox" name="Jog around the park 3x" id="Jog around the park 3">
-        <label for="Jog around the park 3x">Jog around the park 3x</label>
-        <button aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
-      </div>
-
-      <div class="item">
-        <input type="checkbox" name="Jog around the park 3x" id="Jog around the park ">
-        <label for="">Complete Todo App on Frontend Mentor</label>
-        <button aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
-      </div>
-      <div class="item">
-        <input type="checkbox" name="Jog around the park 3x" id="Jog around the park">
-        <label for="">Complete Todo App on Frontend Mentor</label>
-        <button aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
-      </div>
-      <div class="item">
-        <input type="checkbox" name="Jog around the park 3x" id="Jog around the par">
-        <label for="">Complete Todo App on Frontend Mentor</label>
-        <button aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
-      </div>
-      <div class="item">
-        <input type="checkbox" name="Jog around the park 3x" id="Jog around the pa">
-        <label for="">Complete Todo App on Frontend Mentor</label>
-        <button aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
-      </div>
     </div>
-    
+
     <div class="statistics">
       <span id="left-count">5 items left</span>
       <div class="selector hide-mobile">
@@ -80,7 +54,6 @@
 
   </section>
 
-  <script src="./app/Theme.js"></script>
   <script src="./app/main.js"></script>
 
 </body>
