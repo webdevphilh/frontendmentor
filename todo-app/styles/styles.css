@@ -142,7 +142,18 @@ header h1 {
   padding: .68em .8888em;
 }
 
-#container .item input[type="checkbox"] {
+#container .item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 1em;
+}
+
+#container .item label input[type="checkbox"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -154,14 +165,15 @@ header h1 {
   padding: .35em;
 }
 
-#container .item input[type="checkbox"]:checked {
+#container .item label input[type="checkbox"]:checked {
   content: url("../images/icon-check.svg");
   background: -webkit-gradient(linear, left top, left bottom, from(#57ddff), to(#c058f3));
   background: linear-gradient(#57ddff, #c058f3);
 }
 
-#container .item label {
+#container .item label p {
   width: 100%;
+  margin: 0;
   padding-left: .75em;
   color: var(--text-color);
 }

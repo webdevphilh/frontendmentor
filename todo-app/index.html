@@ -17,7 +17,14 @@
       <h1>TODO</h1>
       <input id="theme-switch" type="image" onclick="switchTheme()" src="./images/icon-moon.svg" value="set-to-darkmode" alt="theme-switch">
     </header>
-
+    <!--
+    <div class="create-container">
+      <form action="JavaScript:genTask()" id="create-new">
+        <button aria-label="create task" type="submit"></button>
+        <input required type="text" name="create" id="task" placeholder="Create a new todo...">
+      </form>
+    </div>
+    -->
     <div class="create-container">
       <form action="JavaScript:genTask()" id="create-new">
         <button aria-label="create task" type="submit"></button>
@@ -26,12 +33,17 @@
     </div>
 
     <div id="container">
+      <!--
+      -->
       <div class="item" id="Jog around the park 3x">
-        <input onclick="checkedTask(`Jog around the park 3x`)" type="checkbox" name="Jog around the park 3x">
-        <label for="Jog around the park 3x">Jog around the park 3x</label>
-        <button onclick="deleteTask(`Jog around the park 3x`)" aria-label="check: Jog around the park 3x"><img src="./images/icon-cross.svg" alt="X"></button>
+        <label>
+          <input onclick="checkedTask()" type="checkbox">
+          <p>Jog around the park 3x</p>
+        </label>
+        <button onclick="deleteTask()" aria-label="check: Jog around the park 3x">
+          <img src="./images/icon-cross.svg" alt="X">
+        </button>
       </div>
-
     </div>
 
     <div class="statistics">

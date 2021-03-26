@@ -11,17 +11,12 @@ function countTasks(){
 }
 function genTask(){
     let task = document.getElementById("task");
-    let containerDiv = document.getElementById("container");
+    let containerDiv = document.querySelector("#container");
     let itemDiv = document.createElement("div");
-    itemDiv.setAttribute("class", "item");
+    itemDiv.classList.add("item");
     itemDiv.setAttribute("id", task.value);
     containerDiv.appendChild(itemDiv);
-    /*
-    itemDiv.innerHTML =  " <input type=\"checkbox\" name=\" " + task.value + " \" id=\" "+ task.value +" \">  ";
-    itemDiv.innerHTML += "<label for=\" "+ task.value +" \"> "+ task.value +" </label>";
-    itemDiv.innerHTML += "<button aria-label=\"check: "+ task.value +"\"><img src=\"./images/icon-cross.svg\" alt=\"X\"></button>";
-     */
-    
+
     itemDiv.innerHTML =  " <input onclick=\"checkedTask(`"+ task.value +"`)\" type=\"checkbox\" name=\" " + task.value + " \" >  ";
     itemDiv.innerHTML += "<label for=\" "+ task.value +" \"> "+ task.value +" </label>";
     itemDiv.innerHTML += "<button   onclick=\"deleteTask(`" + task.value + "`)\" \
@@ -55,6 +50,8 @@ const html = document.querySelector('html');
 html.dataset.theme = `theme-light`;
 // --
 
+
+
 function checkedTask(taskId){
     let task = document.getElementById(taskId).children[1]; // div > label
     if(task.style.textDecoration == "line-through"){
@@ -79,4 +76,5 @@ function checkedTask(taskId){
  * repair:
  * - check if task is already there
  * - set text color in checkedTask() to theme color (task.style.color is empty)
+ * - dont count checked tasks
  */
