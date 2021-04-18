@@ -1,0 +1,125 @@
+$moderateviolet: hsl(263, 55%, 52%);
+$verydarkgrayishblue: hsl(217, 19%, 35%);
+$verydarkblackishblue: hsl(219, 29%, 14%);
+$lightgray: hsl(0, 0%, 81%);
+$lightgrayishblue: hsl(210, 46%, 95%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* 
+in chrome browser it inserts a div for colorblind which pushes the content to the
+left and make it apear that justify-content: center doesn t work.
+*/
+#blockColorblindContent{
+    position: fixed;
+}
+
+
+body{
+    background-color: $lightgrayishblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    > div{
+        //general layout
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 13px;
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: 1fr 1fr;
+        gap: 2.2em;
+        width: 80%;
+        height: fit-content;
+        color: white;
+
+        > article{
+            border-radius: 10px;
+            padding: 2em;
+
+            .head-text{
+                margin: 1em 0;
+            }
+            div{
+                margin-bottom: 1em;
+                .portrait{
+                    position:absolute;
+                    height: 2.5em;
+                    width: auto;
+                }
+                p{
+                    margin-left: 3rem;
+                }
+            }
+        }
+
+        .grid-1-12{
+            grid-row: 1;
+            grid-column: 1 / 3;
+            background-color: $moderateviolet;
+        }
+        .grid-1-3{
+            grid-row: 1;
+            grid-column: 3;
+            background-color: $verydarkgrayishblue;
+        }
+        .grid-12-44{
+            grid-row: 1 / 3;
+            grid-column: 4;
+            background-color: white;
+            color: $verydarkgrayishblue;
+        }
+        .grid-2-1{
+            grid-row: 2;
+            grid-column: 1;
+            background-color: white;
+            color: $verydarkgrayishblue;
+        }
+        .grid-2-23{
+            grid-row: 2;
+            grid-column: 2 / 4;
+            background-color: $verydarkblackishblue;
+        }
+
+        // extra styling
+        .bg-pattern{
+            background-image: url("../images/bg-pattern-quotation.svg");
+            background-repeat: no-repeat;
+            background-position: 26em 0;
+        }
+        .verified-graduate{
+            opacity: 0.5;
+            font-size: 0.9em;
+        }
+        .quotations{
+            opacity: 0.7;
+            line-height: 1.4em;
+        }
+        .portrait{
+            width: 2em;
+            border-radius: 50%;
+            border: 1px solid $lightgrayishblue
+        }
+    }
+}
+
+@media screen and (max-width:1100px){
+    body{
+        display: flex;
+        flex-wrap:  wrap;
+        > div{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .bg-pattern{
+        background-position: calc(100% - 2em) 0 !important;
+    }
+}
